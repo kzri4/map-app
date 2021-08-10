@@ -30,10 +30,10 @@
 @section('script')
     @include('partial.map')
     <script defer>
-        @if (isset($shop))
-           // 中心とzoomを指定
-            map.setView([{{ $shop->latitude }}, {{ $shop->longitude }}], 5);
-            L.marker([{{ $shop->latitude }},{{ $shop->longitude }}]).bindPopup("{{ $shop->name }}", {closeButton: false}).addTo(map);
+        @if (isset($shop)) 
+            L.marker([{{ $shop->latitude }},{{ $shop->longitude }}])
+            .bindPopup("{{ $shop->name }}", {closeButton: false})
+            .addTo(map);
         @endif
     </script>
 @endsection
