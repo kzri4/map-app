@@ -20,7 +20,6 @@ class CreateShopsTable extends Migration
             $table->string('address')->nullable();
             $table->string('latitude')->nullable();
             $table->string('longitude')->nullable();
-            $table->boolean('active')->default(0);
             $table->timestamps();
             $table->softDeletes();
         });

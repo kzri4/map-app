@@ -117,6 +117,7 @@ class ShopController extends Controller
     {
         $shop = Shop::find($id);
         $shop->delete($id);
+        
         return redirect(route('shops.index'));
     }
 }

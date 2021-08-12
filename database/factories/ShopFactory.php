@@ -29,7 +29,6 @@ class ShopFactory extends Factory
             'address' => $faker->address(),
             'latitude' => $faker->latitude($min=26, $max=43),
             'longitude' => $faker->longitude($min=127.7, $max=141.6),
-            'active' => 1,
         ];
     }
 }
